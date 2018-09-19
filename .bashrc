@@ -6,3 +6,9 @@
 gitcreate () {
         curl -v -H "Authorization: token YOUR_NEW_TOKEN_HERE" https://api.github.com/user/repos -d "{\"name\": \"$1\", \"description\": \"$2\"}"
 }
+
+
+# Later addition that clones one of my repos with just the repo name
+cloneme () {
+        git clone https://github.com/atlc/$1
+}
