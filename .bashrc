@@ -5,7 +5,7 @@
 
 gitcreate () {
         curl -v -H "Authorization: token YOUR_NEW_TOKEN_HERE" https://api.github.com/user/repos -d "{\"name\": \"$1\", \"description\": \"$2\"}"
-	cd ~/source && mkdir $1 && cd $1 && git init && git remote add origin https://github.com/YOUR_USERNAME_HERE/$1
+	cd ~/source && git clone https://github.com/YOUR_USERNAME_HERE/$1
 }
 
 
